@@ -22,7 +22,7 @@ namespace desafio_POO.utils
 
         public static void ShowResult(double R)
         {
-            Console.Clear();
+            //Console.Clear();
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X\n");
@@ -34,9 +34,9 @@ namespace desafio_POO.utils
         public static void LerValoresCalculo()
         {
             Console.WriteLine("Digite o primeiro valor: ");
-            calculosBasicos.X = Convert.ToInt32(Console.ReadLine());
+            calculosBasicos.X = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("\nDigite o segundo valor: ");
-            calculosBasicos.Y = Convert.ToInt32(Console.ReadLine());
+            calculosBasicos.Y = Convert.ToDouble(Console.ReadLine());
         }
 
         public static void LerValoresMedia()
@@ -57,7 +57,7 @@ namespace desafio_POO.utils
                 calculosEstatiscos.valores[i] = x;
 
             }
-            calculosEstatiscos.CalcularMedia();
+            calculosEstatiscos.CalcularMedia(qtd);
             ShowResult(calculosEstatiscos.R);
 
         }

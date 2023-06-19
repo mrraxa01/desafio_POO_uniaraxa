@@ -27,33 +27,26 @@ switch(opcao)
     case 1:
         lerValoresCalculo();
         calculosBasicos.Somar();
-        //Console.WriteLine("RESULTADO ==> " + calculosBasicos.R );
         InteractionMethods.ShowResult(calculosBasicos.R);
         break;
     case 2:
         lerValoresCalculo();
         calculosBasicos.Subtrair();
-        //Console.WriteLine("RESULTADO ==> " + calculosBasicos.R );
-         InteractionMethods.ShowResult(calculosBasicos.R);
+        InteractionMethods.ShowResult(calculosBasicos.R);
         break;
     case 3:
         lerValoresCalculo();
         calculosBasicos.Multiplicar();
-        //Console.WriteLine("RESULTADO ==> " + calculosBasicos.R );
-         InteractionMethods.ShowResult(calculosBasicos.R);
+        InteractionMethods.ShowResult(calculosBasicos.R);
         break;
     case 4:
         lerValoresCalculo();
         calculosBasicos.Dividir();
-        //Console.WriteLine("RESULTADO ==> " + calculosBasicos.R );
+ 
          InteractionMethods.ShowResult(calculosBasicos.R);
         break;
     case 5:
         InteractionMethods.LerValoresMedia();
-       // Console.WriteLine("leu =====>>>>>>" + calculosEstatisticos.valores.Length);
-       // calculosEstatisticos.CalcularMedia();
-        //Console.WriteLine("RESULTADO ==> " + calculosEstatisticos.R );
-    //   InteractionMethods.ShowResult(calculosEstatisticos.R);
         break;
 
 }   

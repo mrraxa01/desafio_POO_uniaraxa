@@ -34,14 +34,15 @@ namespace desafio_POO
         public void Dividir(){
             try
             {
-                if(num2 == 0)
+                if(num2 == 0){
+                    
                     throw new DivideByZeroException();
-                
+                    
+                }
                 R = num1/num2;
             }
             catch(DivideByZeroException ex)
-            {
-                R = 0;
+            {   
                 Console.WriteLine("Não é possível dividir por zero - " + ex.Message);
             }
         }

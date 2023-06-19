@@ -8,22 +8,17 @@ namespace desafio_POO
 {
     public class Estatistico: Calculo
     {
-        public double[] valores = new double[3];
+        public double[] valores = new double[100];
 
-        public void CalcularMedia()
+        public void CalcularMedia(int qtd)
         {
-            Console.WriteLine("1");
             double soma =0;
-            int qtdeValidNumbers =0;
-
-            foreach (double valor in valores){
-                Console.WriteLine("2" + valores[1]);
-                qtdeValidNumbers++;
-                soma += valor;
-              
-            }
-           Console.WriteLine("3");
-            R = soma / qtdeValidNumbers;
+           
+            for (int i = 0; i<qtd; i++){
+                soma += valores[i];
+            }    
+            
+            R = soma / qtd;
         }
     }
 }
