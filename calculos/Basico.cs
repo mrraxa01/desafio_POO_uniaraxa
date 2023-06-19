@@ -6,49 +6,54 @@ using System.Threading.Tasks;
 namespace desafio_POO
 
 {
-    public class Basico: Calculo
+    public class Basico : Calculo
     {
         private double num1;
         private double num2;
-       
-        public bool ExceptionByZero {get; protected set;}
+
+        public bool ExceptionByZero { get; protected set; }
 
         public double X
         {
-            set{ num1 = value;}
+            set { num1 = value; }
         }
         public double Y
         {
-            set{ num2 = value;}
+            set { num2 = value; }
         }
 
-        public void Somar(){
+        public void Somar()
+        {
             R = num1 + num2;
         }
 
-        public void Subtrair(){
+        public void Subtrair()
+        {
             R = num1 - num2;
         }
 
-        public void Multiplicar(){
+        public void Multiplicar()
+        {
             R = num1 * num2;
         }
 
-        public void Dividir(){
+        public void Dividir()
+        {
             ExceptionByZero = false;
             try
             {
-                if(num2 == 0){
-                    
+                if (num2 == 0)
+                {
+
                     throw new DivideByZeroException();
-                    
+
                 }
-                R = num1/num2;
+                R = num1 / num2;
             }
-            catch(DivideByZeroException)
-            {   
+            catch (DivideByZeroException)
+            {
                 ExceptionByZero = true;
-                
+
             }
         }
     }

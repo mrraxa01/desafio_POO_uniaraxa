@@ -2,7 +2,7 @@ namespace desafio_POO.utils
 {
     public static class InteractionMethods
     {
-        static Basico calculosBasicos = new();
+
         static Estatistico calculosEstatiscos = new();
 
 
@@ -30,8 +30,8 @@ namespace desafio_POO.utils
             Console.WriteLine("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X\n");
             Console.ResetColor();
         }
-    
-       
+
+
         public static void ShowException(string msg)
         {
             Console.Clear();
@@ -42,8 +42,8 @@ namespace desafio_POO.utils
             Console.WriteLine("\n-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X\n");
             Console.ResetColor();
         }
-       
- 
+
+
 
         public static void LerValoresMedia()
         {
@@ -68,6 +68,6 @@ namespace desafio_POO.utils
 
         }
 
- 
+
     }
 }
