@@ -55,32 +55,14 @@ namespace desafio_POO
 
             } while (exibeMenu);
 
-            void lerValoresCalculo(){
+            void lerValoresCalculo()
+            {
                 Console.WriteLine("Digite o primeiro valor: ");
                 calculosBasicos.X = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("\nDigite o segundo valor: ");
-                calculosBasicos.Y = Convert.ToInt32(Console.ReadLine());    
-            } 
+                calculosBasicos.Y = Convert.ToInt32(Console.ReadLine());
+            }
 
-            /*  double[] lerValoresMedia(){
-
-                Console.WriteLine("Deseja calcular a média com quantos números?");
-                int qtd = Convert.ToInt32(Console.ReadLine());
-                double[] valores = new double[qtd];
-
-                if(qtd < 2)
-                {
-                    Console.WriteLine("Precisamos de pelo menos 2 múmeros!");
-                    lerValoresMedia();
-                }
-                 for(int i=0; i < qtd; i++)
-                    { 
-                        Console.WriteLine("Digite o {0}º número: ", i+1);
-                        valores[i] = Convert.ToInt32(Console.ReadLine());
-                    }       
-
-                return valores;
-            } */
 
         }
     }
