@@ -22,22 +22,28 @@ namespace desafio_POO.utils
 
         public static void ShowResult(double R)
         {
-            //Console.Clear();
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X\n");
             Console.WriteLine("O RESULTADO DA OPERAÇÃO É {0} \n", R);
             Console.WriteLine("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X\n");
             Console.ResetColor();
         }
-
-        public static void LerValoresCalculo()
+    
+       
+        public static void ShowException(string msg)
         {
-            Console.WriteLine("Digite o primeiro valor: ");
-            calculosBasicos.X = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("\nDigite o segundo valor: ");
-            calculosBasicos.Y = Convert.ToDouble(Console.ReadLine());
+            Console.Clear();
+            Console.BackgroundColor = ConsoleColor.DarkRed;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X\n");
+            Console.WriteLine(msg);
+            Console.WriteLine("\n-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X\n");
+            Console.ResetColor();
         }
+       
+ 
 
         public static void LerValoresMedia()
         {
@@ -61,5 +67,7 @@ namespace desafio_POO.utils
             ShowResult(calculosEstatiscos.R);
 
         }
+
+ 
     }
 }

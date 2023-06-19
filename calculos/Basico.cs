@@ -10,6 +10,9 @@ namespace desafio_POO
     {
         private double num1;
         private double num2;
+       
+        public bool ExceptionByZero {get; protected set;}
+
         public double X
         {
             set{ num1 = value;}
@@ -32,6 +35,7 @@ namespace desafio_POO
         }
 
         public void Dividir(){
+            ExceptionByZero = false;
             try
             {
                 if(num2 == 0){
@@ -41,9 +45,10 @@ namespace desafio_POO
                 }
                 R = num1/num2;
             }
-            catch(DivideByZeroException ex)
+            catch(DivideByZeroException)
             {   
-                Console.WriteLine("Não é possível dividir por zero - " + ex.Message);
+                ExceptionByZero = true;
+                
             }
         }
     }
